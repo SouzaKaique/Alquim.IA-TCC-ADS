@@ -75,6 +75,7 @@ body {
   min-width: 200px;
   font-family: 'Pixelify Sans', monospace;
   box-shadow: 2px 2px 0 #222;
+  margin-bottom: 200px;
 }
 
 .lab-painel-titulo {
@@ -152,3 +153,86 @@ body {
   width: 24px;
   margin-right: 8px;
 }
+
+.lab-tubo {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.lab-bico {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* Responsividades */
+
+@media (max-width: 768px) {
+  .lab-container {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+  .lab-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .lab-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .lab-painel {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .lab-reagente {
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+  .lab-tubo,
+  .lab-bico {
+    width: 80px;
+    max-width: 100%;
+    margin: 8px 0;
+  }
+  .lab-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .lab-btn {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lab-container {
+    font-size: 0.85em;
+  }
+  .lab-header span {
+    font-size: 1em;
+  }
+  .lab-painel-titulo {
+    font-size: 1em;
+  }
+  .lab-tubo,
+  .lab-bico {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lab-tubo,
+  .lab-bico {
+    max-width: 80px;
+    margin-bottom: 12px;
+  }
+}
+
