@@ -1,0 +1,143 @@
+body.fundo-reagentes {
+  background: #e6d3a3;
+  font-family: 'Pixelify Sans', monospace;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.livro-reagentes {
+  background: #f6e3b3;
+  border: 8px solid #6d4c2c;
+  box-shadow: 8px 8px 0 #6d4c2c;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px 32px 24px 32px;
+  border-radius: 0;
+  position: relative;
+}
+
+.cabecalho-livro {
+  border-bottom: 4px solid #6d4c2c;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.icone-livro {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  margin-right: 16px;
+}
+
+.titulo-livro {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 2.2rem;
+  color: #6d4c2c;
+  letter-spacing: 2px;
+}
+
+.lista-reagentes {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.card-reagente {
+  background: #e6d3a3;
+  border: 4px solid #6d4c2c;
+  box-shadow: 4px 4px 0 #6d4c2c;
+  border-radius: 0;
+  font-family: 'Pixelify Sans', monospace;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-reagente {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  background: #d9c7a3;
+  border-bottom: 2px solid #6d4c2c;
+  image-rendering: pixelated;
+}
+
+.nome-reagente {
+  font-size: 1.2rem;
+  color: #6d4c2c;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.descricao-reagente {
+  font-size: 1rem;
+  color: #4c3a1a;
+  margin-bottom: 0;
+}
+
+.rodape-livro {
+  border-top: 4px solid #6d4c2c;
+  padding-top: 16px;
+  margin-top: 32px;
+  text-align: right;
+}
+
+.botao-voltar {
+  background: #6d4c2c;
+  border: 2px solid #4c3a1a;
+  color: #fff;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 1.1rem;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 #4c3a1a;
+  padding: 8px 32px;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.botao-voltar:hover {
+  background: #4c3a1a;
+  color: #f6e3b3;
+}
+
+/* Remover arredondamento do Bootstrap */
+.card, .btn, .container, .shadow, .rounded {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .livro-reagentes {
+    max-width: 98vw;
+    padding: 8px;
+  }
+  .cabecalho-livro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .titulo-livro {
+    font-size: 1.5rem;
+  }
+  .lista-reagentes {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .card-reagente {
+    width: 90vw;
+    max-width: 300px;
+  }
+  .imagem-reagente {
+    height: 80px;
+  }
+}
