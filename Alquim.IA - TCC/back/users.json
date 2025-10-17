@@ -1,0 +1,18 @@
+[
+    {
+        "usuario": "teste",
+        "senha": "1234"
+    },
+    {
+        "usuario": "kaique",
+        "senha": "123456"
+    },
+    {
+        "usuario": "teste2",
+        "senha": "$2b$12$PlFFgK6hsipbY5cJ7ZqKE.MX.608wjS1N1iDXhvE7XptThFcgDM9O"
+    },
+    {
+        "usuario": "flaviane",
+        "senha": "$2b$12$IM0DGJD6KW4fnQ16cYJYLexHszI8Su4RRdX0FO.NjN4Rfn4Aq93RW"
+    }
+]
