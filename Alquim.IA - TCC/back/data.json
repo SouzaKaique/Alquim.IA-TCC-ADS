@@ -1,1 +1,39 @@
-{}
+[
+  {
+    "id": "chumbo",
+    "nome": "Chumbo (II)",
+    "formula": "Pb²⁺",
+    "categoria": "Cátions",
+    "corClass": "am-blue",
+    "descricao": "Cátion metálico pesado, forma precipitados característicos com diversos ânions.",
+    "propriedades": [
+      "Massa molar: 207.2 g/mol",
+      "Estado: Cátion em solução aquosa",
+      "Cor: Incolor em solução"
+    ],
+    "reacoes": [
+      "Pb²⁺ + 2Cl⁻ → PbCl₂ (precipitado branco)",
+      "Pb²⁺ + CrO₄²⁻ → PbCrO₄ (precipitado amarelo)",
+      "Pb²⁺ + S²⁻ → PbS (precipitado preto)"
+    ],
+    "seguranca": "Tóxico por ingestão e inalação. Use luvas e trabalhe em capela."
+  },
+  {
+    "id": "cobre",
+    "nome": "Cobre (II)",
+    "formula": "Cu²⁺",
+    "categoria": "Cátions",
+    "corClass": "am-orange",
+    "descricao": "Cátion de coloração azul, forma precipitados com hidróxidos e sulfetos.",
+    "propriedades": [
+      "Massa molar: 63.55 g/mol",
+      "Estado: Cátion em solução aquosa",
+      "Cor: Azul em solução"
+    ],
+    "reacoes": [
+      "Cu²⁺ + 2OH⁻ → Cu(OH)₂ (precipitado azul)",
+      "Cu²⁺ + S²⁻ → CuS (precipitado preto)"
+    ],
+    "seguranca": "Nocivo se ingerido em grandes quantidades. Evite inalação do pó."
+  }
+]

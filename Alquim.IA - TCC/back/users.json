@@ -12,7 +12,11 @@
         "senha": "$2b$12$PlFFgK6hsipbY5cJ7ZqKE.MX.608wjS1N1iDXhvE7XptThFcgDM9O"
     },
     {
-        "usuario": "flaviane",
-        "senha": "$2b$12$IM0DGJD6KW4fnQ16cYJYLexHszI8Su4RRdX0FO.NjN4Rfn4Aq93RW"
+        "usuario": "eve",
+        "senha": "$2b$12$4daeHBMZkw1ZgxGSvLZqzOpJ5iv1zZeEQoy31bu0r9rovZprB6xou"
+    },
+    {
+        "usuario": "kiq",
+        "senha": "$2b$12$KKeVBm9X6Qn9UKgq7ekLGuAsR9KQyXWbXtJHA.ypkt.V1DO0yrvpy"
     }
 ]

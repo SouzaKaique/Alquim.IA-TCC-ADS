@@ -52,3 +52,17 @@ body {
   margin: 0 auto 20px auto;
   color: #000;
 }
+
+/* Estilo para notificações de login */
+
+.notyf .notyf__toast.notyf__toast--success {
+  background-color: #dbe6e6 !important;
+  color: #fff !important;
+}
+.notyf .notyf__toast.notyf__toast--error {
+  background-color: #8a2f2f !important;
+  color: #fff !important;
+}
+.notyf .notyf__icon {
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,0.15));
+}

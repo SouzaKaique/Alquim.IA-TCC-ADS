@@ -1,143 +1,123 @@
-body.fundo-reagentes {
-  background: #e6d3a3;
-  font-family: 'Pixelify Sans', monospace;
-  min-height: 100vh;
-  margin: 0;
+body {
+    background-color: #6d7b7c;
+    color: #222;
+    font-family: "IBM Plex Mono", monospace;
 }
 
-.livro-reagentes {
-  background: #f6e3b3;
-  border: 8px solid #6d4c2c;
-  box-shadow: 8px 8px 0 #6d4c2c;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 32px 32px 24px 32px;
-  border-radius: 0;
-  position: relative;
+.reagentes-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.cabecalho-livro {
-  border-bottom: 4px solid #6d4c2c;
-  padding-bottom: 12px;
-  margin-bottom: 24px;
+.reagentes-header {
+    padding: 1.5rem;
+    background-color: #5f6b6c;
+    border-bottom: 2px solid #4c5556;
+    color: #fff;
 }
 
-.icone-livro {
-  width: 48px;
-  height: 48px;
-  image-rendering: pixelated;
-  margin-right: 16px;
+.titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-.titulo-livro {
-  font-family: 'Pixelify Sans', monospace;
-  font-size: 2.2rem;
-  color: #6d4c2c;
-  letter-spacing: 2px;
+.busca-categorias {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.categorias-btns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn.filtro {
+    background-color: #9ca3a4;
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.btn.filtro.ativo {
+    background-color: #1f3c46;
+}
+
+.reagentes-conteudo {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
 }
 
 .lista-reagentes {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 0;
+    width: 30%;
+    background-color: #94a1a2;
+    overflow-y: auto;
+    padding: 1rem;
+    border-right: 2px solid #5f6b6c;
 }
 
-.card-reagente {
-  background: #e6d3a3;
-  border: 4px solid #6d4c2c;
-  box-shadow: 4px 4px 0 #6d4c2c;
-  border-radius: 0;
-  font-family: 'Pixelify Sans', monospace;
-  width: 200px;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.imagem-reagente {
-  width: 100%;
-  height: 100px;
-  object-fit: contain;
-  background: #d9c7a3;
-  border-bottom: 2px solid #6d4c2c;
-  image-rendering: pixelated;
-}
-
-.nome-reagente {
-  font-size: 1.2rem;
-  color: #6d4c2c;
-  font-weight: bold;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-
-.card-body {
-  padding: 12px;
-}
-
-.descricao-reagente {
-  font-size: 1rem;
-  color: #4c3a1a;
-  margin-bottom: 0;
-}
-
-.rodape-livro {
-  border-top: 4px solid #6d4c2c;
-  padding-top: 16px;
-  margin-top: 32px;
-  text-align: right;
-}
-
-.botao-voltar {
-  background: #6d4c2c;
-  border: 2px solid #4c3a1a;
-  color: #fff;
-  font-family: 'Pixelify Sans', monospace;
-  font-size: 1.1rem;
-  border-radius: 0;
-  box-shadow: 2px 2px 0 #4c3a1a;
-  padding: 8px 32px;
-  letter-spacing: 1px;
-  transition: background 0.2s;
-}
-
-.botao-voltar:hover {
-  background: #4c3a1a;
-  color: #f6e3b3;
-}
-
-/* Remover arredondamento do Bootstrap */
-.card, .btn, .container, .shadow, .rounded {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-/* Responsivo */
-@media (max-width: 900px) {
-  .livro-reagentes {
-    max-width: 98vw;
-    padding: 8px;
-  }
-  .cabecalho-livro {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .titulo-livro {
-    font-size: 1.5rem;
-  }
-  .lista-reagentes {
-    flex-direction: column;
-    gap: 16px;
+.reagente-item {
+    display: flex;
     align-items: center;
-  }
-  .card-reagente {
-    width: 90vw;
-    max-width: 300px;
-  }
-  .imagem-reagente {
-    height: 80px;
-  }
+    gap: 0.8rem;
+    background-color: #dde4e5;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.reagente-item:hover {
+    transform: scale(1.02);
+    background-color: #e5eced;
+}
+
+.cor {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.am-blue { background-color: #2196F3; }
+.am-orange { background-color: #FF9800; }
+.am-red { background-color: #F44336; }
+.am-yellow { background-color: #FFEB3B; }
+.am-purple { background-color: #9C27B0; }
+
+.detalhe-reagente {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #7f8b8c;
+    overflow-y: auto;
+}
+
+.detalhe-box {
+    background-color: #dde4e5;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.secao {
+    background-color: #dde4e5;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.secao h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.seguranca {
+    background-color: #b0a7aa;
+    color: #b80000;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
