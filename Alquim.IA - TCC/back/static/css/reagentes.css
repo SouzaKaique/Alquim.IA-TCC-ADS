@@ -1,0 +1,123 @@
+body {
+    background-color: #6d7b7c;
+    color: #222;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.reagentes-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.reagentes-header {
+    padding: 1.5rem;
+    background-color: #5f6b6c;
+    border-bottom: 2px solid #4c5556;
+    color: #fff;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.busca-categorias {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.categorias-btns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn.filtro {
+    background-color: #9ca3a4;
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.btn.filtro.ativo {
+    background-color: #1f3c46;
+}
+
+.reagentes-conteudo {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.lista-reagentes {
+    width: 30%;
+    background-color: #94a1a2;
+    overflow-y: auto;
+    padding: 1rem;
+    border-right: 2px solid #5f6b6c;
+}
+
+.reagente-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #dde4e5;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.reagente-item:hover {
+    transform: scale(1.02);
+    background-color: #e5eced;
+}
+
+.cor {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.am-blue { background-color: #2196F3; }
+.am-orange { background-color: #FF9800; }
+.am-red { background-color: #F44336; }
+.am-yellow { background-color: #FFEB3B; }
+.am-purple { background-color: #9C27B0; }
+
+.detalhe-reagente {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #7f8b8c;
+    overflow-y: auto;
+}
+
+.detalhe-box {
+    background-color: #dde4e5;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.secao {
+    background-color: #dde4e5;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.secao h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.seguranca {
+    background-color: #b0a7aa;
+    color: #b80000;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}

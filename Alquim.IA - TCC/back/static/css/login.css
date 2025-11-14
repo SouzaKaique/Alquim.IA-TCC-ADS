@@ -1,0 +1,68 @@
+body {
+  background-image: url(../IMG/TelaFundo.png);
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.caixa-registro {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.titulo {
+  font-size: 70px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.input-pixel {
+  border: 2px solid #000 !important;
+  box-shadow: none !important;
+  background: #d1d5d8 !important;
+  font-size: 16px;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.botao {
+  margin-top: 15px;
+  padding: 10px;
+  background: #cbd5e1;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 3px 3px #2e2e2e;
+}
+
+.botao:hover {
+  background: #aebbc8;
+}
+
+.link-login {
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+  color: #000;
+}
+
+.icone-usuario {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  color: #000;
+}
+
+/* Estilo para notificações de login */
+
+.notyf .notyf__toast.notyf__toast--success {
+  background-color: #dbe6e6 !important;
+  color: #fff !important;
+}
+.notyf .notyf__toast.notyf__toast--error {
+  background-color: #8a2f2f !important;
+  color: #fff !important;
+}
+.notyf .notyf__icon {
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,0.15));
+}
